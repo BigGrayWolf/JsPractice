@@ -66,6 +66,7 @@ body {
 
 .cell.x::before,
 .cell.x::after,
+/* 不是x类也不是circle类才会应用此属性 */
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after {
     content: "";
