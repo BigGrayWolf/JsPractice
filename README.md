@@ -31,7 +31,7 @@
 ```
 
 ### 运行效果
-![](./content/clock/image/)
+![](./content/clock/image/1.png)
 ### [video](https://www.youtube.com/watch?v=Ki0XXrlKlHY)
 
 ---

@@ -28,7 +28,7 @@ class Weather {
         this.windElement.innerText = `WindSpeed: ${data["wind"]["speed"]} km/h`
         this.weatherImageElement.src = `https://openweathermap.org/img/wn/${data["weather"][0]["icon"]}.png`
         this.weatherElement.classList.remove('loading')
-        document.body.style.backgroundImage = `url(https://source.unsplash.com/random)`
+        document.body.style.backgroundImage = `url(https://source.unsplash.com/random/1920x1080)`
     }
 }
 
