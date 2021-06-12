@@ -5,10 +5,11 @@
 
 | :card_index: | :jack_o_lantern: | :beer: | :fish_cake: | :octocat: |
 | ----- | ----- | ----- | ----- | ----- |
-| [clock](#clock):☆ | [GreedySnake](#GreedySnake):★☆ | [TicTacToe](#TicTacToe):★ | [calculator](#calculator):★
+| [clock](#clock):☆ | [GreedySnake](#GreedySnake):★☆ | [TicTacToe](#TicTacToe):★ | [calculator](#calculator):★ | [WeatherApp](#WeatherApp):★☆ |
 
 ---
-## <span id="clock">clock</span> : ☆
+<span id="clock"></span>
+## [clock](./content/clock/readme.md) : ☆
 ### 知识点:
 - 1、html自定义属性`data-name=value`,以`data-`开头
 ```html
@@ -34,7 +35,8 @@
 ### [video](https://www.youtube.com/watch?v=Ki0XXrlKlHY)
 
 ---
-## <span id="GreedySnake">GreedySnake</span> : ★☆
+<span id="GreedySnake"></span>
+## [GreedySnake](./content/GreedySnake/readme.md) : ★☆
 ### 知识点:
 - 1、grid布局
 ```css
@@ -54,7 +56,8 @@
 ### [video](https://www.youtube.com/watch?v=QTcIXok9wNY)
 
 ---
-## <span id="TicTacToe">TicTacToe</span> : ★
+<span id="TicTacToe"></span>
+## [TicTacToe](./content/TicTacToe/readme.md) : ★
 ### 知识点:
 - 1、::after与::before以及not选择器的使用
 ```css
@@ -76,9 +79,34 @@
 ### [video](https://www.youtube.com/watch?v=Y-GkMjUZsmM)
 
 ---
-## <span id="calculator">calculator</span> : ★
+<span id="calculator"></span>
+## [calculator](./content/calculator/readme.md) : ★
 一个简易计算器
 ### 运行效果
 ![](./content/calculator/image/1.png)
 
 ### [video](https://www.youtube.com/watch?v=j59qQ7YWLxw)
+
+---
+<span id="WeatherApp"></span>
+# [WeatherApp](./content/WeatherApp/readme.md) : ★☆
+## 知识点:
+- api的使用
+```js
+fetchWeather(city) {
+    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.key}&units=metric`)
+    .then(response => response.json())
+    .then(data => this.displayWeather(data))
+}
+
+```
+
+## API
+[获取天气](https://openweathermap.org/current)
+[获取天气图片](https://openweathermap.org/img/wn/04d.png)
+**具体使用见代码line17 line29**
+
+## 运行效果
+![](./content/WeatherApp/image/1.png)
+
+## [video](https://www.youtube.com/watch?v=WZNG8UomjSI)

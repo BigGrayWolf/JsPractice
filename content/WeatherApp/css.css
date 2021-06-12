@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Noto Serif SC', serif;
+    background-image: url('https://source.unsplash.com/weekly?water');
+}
+
+.card {
+    background: rgba(0, 0, 0, .6);
+    padding: 2em;
+    color: white;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border-radius: 50%;
+    margin: 0.5em;
+    border: none;
+    height: 46px;
+    width: 46px;
+    background: #7c7c7c2b;
+    color: white;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7c7c7c8b;
+}
+
+input.search-bar {
+    padding: .5em 1em;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    font-family: inherit;
+    font-size: 120%;
+    color: white;
+    background-color: #7c7c7c2b;
+}
+
+h1.temp {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.weather.loading {
+    visibility:hidden;
+    max-height: 20px;
+    position: relative;
+}
+
+.weather.loading::after{
+    content: "Loading...";
+    color: white;
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
