@@ -9,7 +9,7 @@
 
 ---
 <span id="clock"></span>
-## [clock](./content/clock/readme.md) : ☆
+## [clock](./content/clock/) : ☆
 ### 知识点:
 - 1、html自定义属性`data-name=value`,以`data-`开头
 ```html
