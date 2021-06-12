@@ -5,10 +5,10 @@
 
 | :card_index: | :jack_o_lantern: | :beer: | :fish_cake: | :octocat: |
 | ----- | ----- | ----- | ----- | ----- |
-| [clock](#clock):☆ | [GreedySnake](#GreedySnake):★☆ | [TicTacToe](#TicTacToe):★ |
+| [clock](#clock):☆ | [GreedySnake](#GreedySnake):★☆ | [TicTacToe](#TicTacToe):★ | [calculator](#calculator):★
 
-
-## <span id="clock">clock</spane> : ☆
+---
+## <span id="clock">clock</span> : ☆
 ### 知识点:
 - 1、html自定义属性`data-name=value`,以`data-`开头
 ```html
@@ -31,8 +31,10 @@
 
 ### 运行效果
 ![](./content/clock/image/1.png)
+### [video](https://www.youtube.com/watch?v=Ki0XXrlKlHY)
 
-## <span id="GreedySnake">GreedySnake</spane> : ★☆
+---
+## <span id="GreedySnake">GreedySnake</span> : ★☆
 ### 知识点:
 - 1、grid布局
 ```css
@@ -49,9 +51,10 @@
 
 ### 运行效果
 ![](./content/GreedySnake/image/1.png)
+### [video](https://www.youtube.com/watch?v=QTcIXok9wNY)
 
-
-## <span id="TicTacToe">TicTacToe</spane> : ★
+---
+## <span id="TicTacToe">TicTacToe</span> : ★
 ### 知识点:
 - 1、::after与::before以及not选择器的使用
 ```css
@@ -70,3 +73,12 @@
 ### 运行效果
 ![](./content/TicTacToe/image/1.png)
 ![](./content/TicTacToe/image/2.png)
+### [video](https://www.youtube.com/watch?v=Y-GkMjUZsmM)
+
+---
+## <span id="calculator">calculator</span> : ★
+一个简易计算器
+### 运行效果
+![](./content/calculator/image/1.png)
+
+### [video](https://www.youtube.com/watch?v=j59qQ7YWLxw)

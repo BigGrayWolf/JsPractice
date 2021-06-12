@@ -1,4 +1,4 @@
-# greedy snake
+# greedy snake : ★☆
 ## 知识点:
 - 1、grid布局
 ```css
@@ -15,3 +15,5 @@
 
 ## 运行效果
 ![](./image/1.png)
+
+## [video](https://www.youtube.com/watch?v=QTcIXok9wNY)
