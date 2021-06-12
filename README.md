@@ -31,12 +31,12 @@
 ```
 
 ### 运行效果
-![](./content/clock/image/1.png)
+![](./content/clock/image/)
 ### [video](https://www.youtube.com/watch?v=Ki0XXrlKlHY)
 
 ---
 <span id="GreedySnake"></span>
-## [GreedySnake](./content/GreedySnake/readme.md) : ★☆
+## [GreedySnake](./content/GreedySnake/) : ★☆
 ### 知识点:
 - 1、grid布局
 ```css
@@ -57,7 +57,7 @@
 
 ---
 <span id="TicTacToe"></span>
-## [TicTacToe](./content/TicTacToe/readme.md) : ★
+## [TicTacToe](./content/TicTacToe/) : ★
 ### 知识点:
 - 1、::after与::before以及not选择器的使用
 ```css
@@ -80,7 +80,7 @@
 
 ---
 <span id="calculator"></span>
-## [calculator](./content/calculator/readme.md) : ★
+## [calculator](./content/calculator/) : ★
 一个简易计算器
 ### 运行效果
 ![](./content/calculator/image/1.png)
@@ -89,7 +89,7 @@
 
 ---
 <span id="WeatherApp"></span>
-# [WeatherApp](./content/WeatherApp/readme.md) : ★☆
+# [WeatherApp](./content/WeatherApp/) : ★☆
 ## 知识点:
 - api的使用
 ```js
