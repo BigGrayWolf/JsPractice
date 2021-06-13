@@ -1,4 +1,4 @@
-# <a src="https://inthe-darkness.github.io/JsPractice/content/GreedySnake/">greedy snake</a> : ★☆
+# <a href="https://inthe-darkness.github.io/JsPractice/content/GreedySnake/">greedy snake</a> : ★☆
 ## 知识点:
 - 1、grid布局
 ```css

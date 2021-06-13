@@ -6,6 +6,7 @@
 | :card_index: | :jack_o_lantern: | :beer: | :fish_cake: | :octocat: |
 | ----- | ----- | ----- | ----- | ----- |
 | [clock](#clock):☆ | [GreedySnake](#GreedySnake):★☆ | [TicTacToe](#TicTacToe):★ | [calculator](#calculator):★ | [WeatherApp](#WeatherApp):★☆ |
+| [JavaScript30](#JavaScript30):★☆ |
 
 ---
 <span id="clock"></span>
@@ -110,3 +111,39 @@ fetchWeather(city) {
 ![](./content/WeatherApp/image/1.png)
 
 ## [video](https://www.youtube.com/watch?v=WZNG8UomjSI)
+
+
+---
+<span id="JavaScript30"></span>
+# [JavaScript30](./content/JavaScript30/) : ★☆
+实现了部分JavaScript30上的代码
+## 知识点:
+- audio标签
+```html
+<audio src="./sounds/tink.wav" data-key="76"></audio>
+```
+- classList.toggole
+```js
+const panels = document.querySelectorAll('.panel')
+panels.forEach(panel => panel.addEventListener('click', e=>{
+    // toggle:The toggle() method of the DOMTokenList interface 
+    // removes a given token from the list and returns false. 
+    // If token doesn't exist it's added and the function returns true.
+    panel.classList.toggle('open')
+}))
+```
+- js修改css变量
+```js
+const suffix = this.dataset.sizing || ''
+document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
+```
+
+## 运行效果
+### DrumKit
+![](./content/JavaScript30/DrumKit/image/1.png)
+### FlexPanelsImageGallery
+![](./content/JavaScript30/FlexPanelsImageGallery/image/1.png)
+### FlexPanelsImageGallery
+![](./content/JavaScript30/UpdateCssVariableWithJS/image/1.png)
+
+## [video](https://javascript30.com/) [github](https://github.com/wesbos/JavaScript30)

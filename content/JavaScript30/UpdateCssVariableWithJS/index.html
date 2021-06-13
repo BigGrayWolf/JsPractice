@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UpdateCssVariableWithJS</title>
+    <style>
+        :root {
+            --base: #ffc600;
+            --spacing: 10px;
+            --blur: 0px;
+        }
+
+
+        img {
+            padding: var(--spacing);
+            background: var(--base);
+            filter: blur(var(--blur));
+        }
+
+        body {
+            background-color: #193549;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100;
+        }
+
+        .controls {
+            margin-bottom: 50px;
+        }
+
+        h1 span {
+            color: var(--base);
+        }
+    </style>
+</head>
+<body>
+    <h1>Update CSS Variables With <span>JS</span></h1>
+    <div class="controls">
+        <label for="spacing">Spacing: </label>
+        <input type="range" name="spacing" min="10" max="200" data-sizing="px" value="10">
+        <label for="blur">Blur: </label>
+        <input type="range" name="blur" min="0" max="25" data-sizing="px" value="0">
+        <label for="base">Base Color:</label>
+        <input type="color" name="base" value="#ffc600">
+    </div>
+
+    <img src="https://picsum.photos/seed/picsum/600/400" alt="">
+    <script>
+        function update(e)  {
+            const suffix = this.dataset.sizing || ''
+            document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix)
+        }
+    
+        const inputs = document.querySelectorAll('input')
+        inputs.forEach(input => {
+            input.addEventListener('mousemove', update)
+            input.addEventListener('change', update)
+        })
+    </script>
+</body>
+</html>

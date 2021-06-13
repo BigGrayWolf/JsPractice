@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+    <title>FlexPanelsImageGallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 30px;
+        }
+
+        .panels {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .panel {
+            flex: 1;
+            height: 100%;
+            background-position: center;
+            color: white;
+            background-size: cover;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            transition:
+                font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+                flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11);
+        }
+
+        .panel > * {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.5s;
+        }
+
+        .panel > *:nth-child(1) { transform: translateY(-100%); }
+        .panel > *:nth-child(3) { transform: translateY(100%); }
+        .panel.opened > *:nth-child(1) { transform: translateY(0); }
+        .panel.opened > *:nth-child(3) { transform: translateY(0); }
+
+        .panel1 { background-image:url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); }
+        .panel2 { background-image:url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500); }
+        .panel3 { background-image:url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d); }
+        .panel4 { background-image:url(https://source.unsplash.com/ITjiVXcwVng/1500x1500); }
+        .panel5 { background-image:url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500); }
+        
+        .open {
+            flex: 5;
+            font-size: 40px;
+        }
+
+        .panel p:nth-child(2) {
+            font-size: 4em;
+        }
+
+        .panel p {
+            font-family: 'Amatic SC';
+            font-size: 2rem;
+            text-shadow: 0 0 6px rgb(0 0 0 / 80%);
+        }
+    </style>
+</head>
+<body>
+    <div class="panels">
+        <div class="panel panel1">
+            <p>Hey</p>
+            <p>Let's</p>
+            <p>Dance</p>
+        </div>
+        <div class="panel panel2">
+            <p>Give</p>
+            <p>Take</p>
+            <p>Receive</p>
+        </div>
+        <div class="panel panel3">
+            <p>Experience</p>
+            <p>It</p>
+            <p>Today</p>
+        </div>
+        <div class="panel panel4">
+            <p>Give</p>
+            <p>All</p>
+            <p>You can</p>
+        </div>
+        <div class="panel panel5">
+            <p>Life</p>
+            <p>In</p>
+            <p>Motion</p>
+        </div>
+    </div>
+    <script>
+        const panels = document.querySelectorAll('.panel')
+        panels.forEach(panel => panel.addEventListener('click', e=>{
+            // toggle:The toggle() method of the DOMTokenList interface 
+            // removes a given token from the list and returns false. 
+            // If token doesn't exist it's added and the function returns true.
+            console.log(e)
+            panel.classList.toggle('open')
+        }))
+
+        panels.forEach(panel => panel.addEventListener('transitionend', e=>{
+            // 如果不加这个判断会发生什么？（花了我一个小时debug 呜呜呜还是太菜了）
+            console.log(e)
+            if (e.propertyName.includes('flex')) {
+                panel.classList.toggle('opened');
+            }
+        }))
+    </script>
+</body>
+</html>
