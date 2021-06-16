@@ -6,7 +6,7 @@
 | :card_index: | :jack_o_lantern: | :beer: | :fish_cake: | :octocat: |
 | ----- | ----- | ----- | ----- | ----- |
 | [clock](#clock):☆ | [GreedySnake](#GreedySnake):★☆ | [TicTacToe](#TicTacToe):★ | [calculator](#calculator):★ | [WeatherApp](#WeatherApp):★☆ |
-| [JavaScript30](#JavaScript30):★☆ |
+| [JavaScript30](#JavaScript30):★☆ | [Minesweeper](#Minesweeper):★ |
 
 ---
 <span id="clock"></span>
@@ -147,3 +147,15 @@ document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix
 ![](./content/JavaScript30/UpdateCssVariableWithJS/image/1.png)
 
 ## [video](https://javascript30.com/) [github](https://github.com/wesbos/JavaScript30)
+
+
+---
+<span id="Minesweeper"></span>
+# [Minesweeper](./content/Minesweeper/) : ★
+
+
+## 运行效果
+![](./content/Minesweeper/image/1.png)
+![](./content/Minesweeper/image/2.png)
+
+## [video参考](https://www.youtube.com/watch?v=kBMnD_aElCQ&t=169s)
