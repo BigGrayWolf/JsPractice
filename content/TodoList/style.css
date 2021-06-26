@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: url('./img/bg1.jpg') no-repeat;
+    font-family: 'Titillium Web', sans-serif;
+    background-size: 100% 200%;
+}
+
+.container {
+    margin: auto;
+    width: 400px;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    background-image: url('./img/bg2.jpg');
+    background-size: 100% 200%;
+    background-repeat: no-repeat;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.clear {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-shadow: 1px 2px 5px black;
+    transition: all 0.2s;
+}
+
+.clear:hover {
+    transform: rotate(180deg);
+}
+
+.date {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+
+.content {
+    width: 100%;
+    height: 400px;
+    background-color: aliceblue;
+}
+
+.list .item {
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.list .item .far {
+    cursor: pointer;
+    flex-grow: 1;
+}
+
+.list .item .fa-trash-alt:hover {
+    color: red;
+}
+
+.list .item .fa-check-circle {
+    color: green;
+}
+
+.list .item .text {
+    display: table-cell;
+    vertical-align:middle;
+    font-weight: 800;
+    flex-grow: 20;
+
+}
+
+.lineThrough {
+    text-decoration: line-through;
+    color: #ccc;
+}
+    
+
+.add-item {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    width: 100%;
+    background-color: aliceblue;
+    height: 60px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 15px 15px;
+}
+
+.add-item i {
+    color: #4162f6;
+    margin: 0 10px;
+}
+
+.add-item input {
+    margin-left: 5px;
+    height: 35px;
+    font-size: 20px;
+    background-color: transparent;
+    border-style: none;
+    width: 80%;
+}
+
+.add-item input::placeholder {
+    color: #4162f6;
+}
